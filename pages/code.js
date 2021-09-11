@@ -8,31 +8,46 @@ setInterval(
         let minuto = data.getMinutes();
         let segundo = data.getSeconds();
         let dia = data.getUTCDay();
-        let valorInicial;
-        let soma;
-        let valorAtual;
-        //zero
-        hora = zero(hora)
-        minuto = zero(minuto)
-        segundo = zero(segundo)
-        //
-        if(dia==7 && hora==15 && minuto==30 && segundo == 0){
-            valorSegundos == 604800;
-            valorAtual
-            
-        }
-        else if(dia==6 && hora==23 && minuto==04){
-            valorInicial == 58800
-            texto.innerHTML = `${diminuir(valorInicial)}`
-        }
-        
-        
-    
-}, 1000); 
 
-function diminuir(x){
-    x = x-1;
-} return x
+        // ajustando dias
+        if(dia==7){
+            dia= 1
+        } 
+        else if(dia==1){
+            dia = 2
+        }
+        else if(dia==2){
+            dia = 3
+        }
+        else if(dia==3){
+            dia = 4
+        }
+        else if(dia==4){
+            dia = 5
+        }
+        else if(dia==5){
+            dia = 6
+        }
+        else if(dia==6){
+            dia = 7
+        }
+        // 
+
+        let valorSegundos;
+        let valorAtual;
+
+        if(dia==1 && hora==15 && minuto==30 && segundo == 0){
+            valorSegundos == Number(604800);
+        }
+        valorSegundos == Number(604800);
+        let formulaDia = Number(dia)*24*60*60
+        let formulaHora = Number(hora)*60*60
+        let formulaMinuto = Number(minuto)*60
+        let formulaSegundo = Number(segundo)
+        valorAtual = Number(formulaDia+formulaHora+formulaMinuto+formulaSegundo)
+        texto.innerHTML = `${Number(valorSegundos)-Number(valorAtual)}`
+        
+}, 1000); 
 
 
  function zero(x){
