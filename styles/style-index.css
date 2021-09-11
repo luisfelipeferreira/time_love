@@ -1,0 +1,49 @@
+/* All */
+*{
+    font-family: 'Fredoka One', cursive;
+}
+body{
+    background: #E4E6C3;
+}
+
+/* Header */
+
+header{
+    text-align: center;
+}
+button > a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.2rem;
+    background: #BBCDE5;
+}
+
+/* Hover header */
+
+button:hover{
+    background: #778DA9;
+}
+
+/* Section */
+
+section{
+    margin: auto;
+    position: relative;
+    top: 5rem;
+    border-radius: 0.8rem;
+    width: 16rem;
+    height: 15rem;
+    background: #C42021;
+}
+div{
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    
+    text-align: center;
+}
