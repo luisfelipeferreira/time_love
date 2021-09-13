@@ -14,7 +14,6 @@ setInterval(
         let valorSegundos;
         
         
-        valorSegundos = 662400
 
 
         if(domingo.checked == true){
@@ -26,27 +25,37 @@ setInterval(
             } 
             else if(dia==1){
                 dia = 1
+                valorSegundos = 662400
             }
             else if(dia==2){
                 dia = 2
+                valorSegundos = 662400
             }
             else if(dia==3){
                 dia = 3
+                valorSegundos = 662400
             }
             else if(dia==4){
                 dia = 4
+                valorSegundos = 662400
             }
             else if(dia==5){
                 dia = 5
+                valorSegundos = 662400
             }
             else if(dia==6){
                 dia = 6
+                valorSegundos = 662400
             }
             // 
 
-            if(dia == 7 && hora>=16 && hora<=21){
+            if(dia == 0 && hora>=16 && hora<=21){
                 texto.innerHTML = `Hora da alegria! &#x1F929`
-            }else{
+            }
+            else if(dia == 0 && hora>21){
+                texto.innerHTML = `O cronometro irá <br> reeniciar em breve &#x231B`
+            }
+            else{
                 let valorAtual;
                 let soma;
         
@@ -71,26 +80,35 @@ setInterval(
             } 
             else if(dia==7){
                 dia = 1
+                valorSegundos = 662400
             }
             else if(dia==1){
                 dia = 2
+                valorSegundos = 662400
             }
             else if(dia==2){
                 dia = 3
+                valorSegundos = 662400
             }
             else if(dia==3){
                 dia = 4
+                valorSegundos = 662400
             }
             else if(dia==4){
                 dia = 5
+                valorSegundos = 662400
             }
             else if(dia==5){
                 dia = 6
+                valorSegundos = 662400
             }
             // 
-            if(dia == 6 && hora>=16 && hora<=21){
+            if(dia == 0 && hora>=16 && hora<=21){
                 texto.innerHTML = `Hora da alegria! &#x1F929`
-            }else{
+            }else if(dia == 0 && hora>21){
+                texto.innerHTML = `O cronometro irá <br> reeniciar em breve &#x231B`
+            }
+            else{
                 let valorAtual;
                 let soma;
         
