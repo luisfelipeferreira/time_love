@@ -67,7 +67,12 @@ setInterval(
                 let formulaSegundo = segundo
                 valorAtual = formulaDia+formulaHora+formulaMinuto+formulaSegundo
                 soma = valorSegundos-valorAtual
-                texto.innerHTML = `Faltam ${soma} segundos &#x1F929`
+                
+                if(soma==1){
+                    texto.innerHTML = `Falta ${soma} segundo &#x1F929`
+                }else{
+                    texto.innerHTML = `Faltam ${soma} segundos &#x1F929`
+                }
                 }
         }
 
@@ -113,14 +118,18 @@ setInterval(
                 let soma;
         
         
-        
                 let formulaDia = ((dia*24)*60)*60
                 let formulaHora = (hora*60)*60
                 let formulaMinuto = minuto*60
                 let formulaSegundo = segundo
                 valorAtual = formulaDia+formulaHora+formulaMinuto+formulaSegundo
                 soma = valorSegundos-valorAtual
-                texto.innerHTML = `Faltam ${soma} segundos &#x1F929`
+
+                if(soma==1){
+                    texto.innerHTML = `Falta ${soma} segundo &#x1F929`
+                }else{
+                    texto.innerHTML = `Faltam ${soma} segundos &#x1F929`
+                }
                 }
         }
 
