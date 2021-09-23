@@ -3,7 +3,7 @@
     font-family: 'Fredoka One', cursive;
 }
 body{
-    background: #E4E6C3;
+    background: #fff;
 }
 
 /* Header */
@@ -20,13 +20,13 @@ button{
     height: 2rem;
     border: none;
     border-radius: 0.2rem;
-    background: #BBCDE5;
+    background: #de434db2;
 }
 
 /* Hover header */
 
 button:hover{
-    background: #778DA9;
+    background: #DE434E;
 }
 
 /* Section */
@@ -42,7 +42,7 @@ section{
     border-radius: 0.8rem;
     width: 16rem;
     height: 15rem;
-    background: #C42021;
+    background: #DE434E;
 }
 div{
     position: relative;
